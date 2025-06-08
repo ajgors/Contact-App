@@ -33,19 +33,19 @@ the application will be launched at localhost:5173
 
 ## Used libraries
 
-1. Frontend
+Frontend
 
 - Default project configuration for Vue that contains vite, eslint, prettier
 - Bootstrap
 
-2. Backend
+Backend
 
 - Default project configuration for ASP.NET Rest API
 - ORM Entity Framework with PostgreSQL database
 
 ## Description of classes and methods
 
-1. Entity framework Models
+Backend
 
 - Contact model contains contact data
 - ContactDetails model contains additional contact data
