@@ -50,7 +50,6 @@ Backend
 - Contact model contains contact data
 - ContactDetails model contains additional contact data
 - Enumeration definition for ContactCategory and ContactSubcategory
-- Definicje enumów dla kategorii kontaktów
 - DTO classes for Login and Contact Patch method
 - AccountController Controller responsible for managing user authentication, checking whether the user is logged in, logging out
 - ContactController responsible for managing contacts
