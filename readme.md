@@ -52,4 +52,14 @@ Backend
 - Enumeration definition for ContactCategory and ContactSubcategory
 - DTO classes for Login and Contact Patch method
 - AccountController Controller responsible for managing user authentication, checking whether the user is logged in, logging out
+  - api/account/login POST endpoint for user login
+  - api/account/register POST endpoint for user account creation
+  - api/account/logout POST endpoint for user logout
+  - api/account/isLogged GET endpointd to check if user is logged in
 - ContactController responsible for managing contacts
+  - api/contact GET endpoint for fetching contact
+  - api/contact/id GET for fetching contact with id
+  - api/contact POST endpoint to create new contact
+  - api/contact/id PATCH endpoint to update existing contact
+  - api/contact/id DELETE endpoint to delete contact with id
+  - api/contact/id/details GET endpoint to get details for contact with id
