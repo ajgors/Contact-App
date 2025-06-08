@@ -1,0 +1,35 @@
+services:
+  backend:
+    container_name: contact_backend
+    build:
+      context: ./backend
+      dockerfile: ./backend/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - "db"
+  db:
+    image: postgres
+    container_name: contact_postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: contacts
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  frontend:
+    container_name: contact_frontend
+    build:
+      context: ./frontend
+    ports:
+      - "4040:80"
+    depends_on:
+      - "backend"
+      - "db"
+
+volumes:
+  postgres_data:
